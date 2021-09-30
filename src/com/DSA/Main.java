@@ -1,6 +1,6 @@
 package com.DSA;
 
-import java.util.EmptyStackException;
+
 
 public class Main {
 
@@ -15,18 +15,30 @@ public class Main {
 
             Stack<String> s2 = new StackImpl<String>(3);
             s2.push("hola");
-            System.out.println(s.size());
+            System.out.println(s2.size());
             s2.push("adeu");
-            System.out.println(s.size());
+            System.out.println(s2.size());
+            s2.push("adeu");
+            System.out.println(s2.size());
 
-            //s2.pop();
+
+            s2.pop();
+            System.out.println(s2.size());
+            s2.pop();
+            System.out.println(s2.size());
+            s2.pop();
+            System.out.println(s2.size());
+
+
+
         } catch (EmptyStackException empty) {
             empty.printStackTrace();
             //
         } catch (FullStackException full) {
             full.printStackTrace();
             //
-        } finally {
+        }
+         finally {
             //
         }
     }
