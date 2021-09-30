@@ -20,6 +20,9 @@ public class Main {
             System.out.println(s2.size());
             s2.push("adeu");
             System.out.println(s2.size());
+            s2.push("adeu");
+            System.out.println(s2.size());
+
 
 
             s2.pop();
@@ -32,10 +35,11 @@ public class Main {
 
 
         } catch (EmptyStackException empty) {
-            empty.printStackTrace();
+            System.out.println("Stack is Empty");
             //
         } catch (FullStackException full) {
-            full.printStackTrace();
+            System.out.println("Stack is Full");
+
             //
         }
          finally {
