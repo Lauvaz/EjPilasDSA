@@ -1,4 +1,4 @@
-package com.DSA;
+package main;
 
 public class FullStackException extends Exception {
 

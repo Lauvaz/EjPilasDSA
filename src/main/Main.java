@@ -1,12 +1,11 @@
-package com.DSA;
-
-
+package main;
 
 public class Main {
 
     public static void main(String[] args) {
         System.out.println("TEST");
         Stack<Integer> s = new StackImpl<Integer>(5);
+
         try {
             s.push(5);
             System.out.println(s.size());
@@ -22,7 +21,6 @@ public class Main {
             System.out.println(s2.size());
             s2.push("adeu");
             System.out.println(s2.size());
-
 
 
             s2.pop();

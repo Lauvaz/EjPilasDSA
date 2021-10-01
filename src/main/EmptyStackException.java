@@ -1,4 +1,4 @@
-package com.DSA;
+package main;
 
 public class EmptyStackException extends Exception {
     public EmptyStackException(String empty) {
