@@ -1,6 +1,7 @@
 package com.DSA;
 
 
+import static java.util.Optional.empty;
 
 public class Main {
 
@@ -8,20 +9,30 @@ public class Main {
         System.out.println("TEST");
         Stack<Integer> s = new StackImpl<Integer>(5);
         try {
+
             s.push(5);
             System.out.println(s.size());
             s.push(12);
             System.out.println(s.size());
 
-            Stack<String> s2 = new StackImpl<String>(3);
-            s2.push("hola");
-            System.out.println(s2.size());
-            s2.push("adeu");
-            System.out.println(s2.size());
-            s2.push("adeu");
-            System.out.println(s2.size());
-            s2.push("adeu");
-            System.out.println(s2.size());
+
+
+                Stack<String> s2 = new StackImpl<String>(3);
+                s2.push("hola");
+                System.out.println(s2.size());
+                s2.push("adeu");
+                System.out.println(s2.size());
+                s2.push("adeu");
+                System.out.println(s2.size());
+            try {
+                s2.push("adeu");
+                System.out.println(s2.size());
+            }
+            catch (FullStackException full) {
+                System.out.println("Stack is Full");
+            }
+
+
 
 
 
@@ -39,6 +50,7 @@ public class Main {
             //
         } catch (FullStackException full) {
             System.out.println("Stack is Full");
+
 
             //
         }
